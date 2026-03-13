@@ -1,6 +1,6 @@
 :root{
     --font-family: 'Poppins', sans-serif;
-    --font-size: 16px;
+    --font-size: 18px;
     --primary-color: #293e2f;
     --secondary-color: #f3be1a;
     --background-color: #fff;
@@ -10,9 +10,6 @@
     --white-color: #fff;
     --black-color: #000;
     --box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-::scroll-marker{
-    color: var(--primary-color);
 }
 
 *{box-sizing: border-box;}
@@ -38,7 +35,7 @@ h3{
     color: var(--white-color);
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: var(--font-size);
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-shadow: var(--box-shadow);
@@ -169,6 +166,11 @@ nav ul li a.active{
     color: var(--white-color);
     float: inherit !important;
     min-height: 100%;
+}
+.testimonials-section .testimonial-item h4{
+    font-size: var(--font-size);
+    font-weight: 600;
+    color: var(--secondary-color);
 }
 .testimonials-section .slick-dots{
     list-style: none;
