@@ -160,7 +160,7 @@ nav ul li a.active{
     gap: 20px;
 }
 .testimonials-section .testimonial-item{
-    background: #18241b;
+    background: #314336;
     padding: 20px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
