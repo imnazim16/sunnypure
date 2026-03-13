@@ -199,9 +199,10 @@ footer{
 
 @media (max-width:768px){
     .menu-btn{display: block;}
-    nav{position: absolute; top: 70px; left: 0; width: 100%; background: var(--primary-color); display: none;}
+    nav{position: absolute; top: 70px; left: 0; width: 100%; background: #18241b; display: none;padding-top: 20px;}
     nav.active-nav{display: block;}
-    nav ul{display: flex; flex-direction: column; align-items: center; gap: 15px; padding: 20px 0;}
+    nav ul{display: flex; flex-direction: column; align-items: flex-start !important; gap: 10px; padding: 20px 20px;}
+    nav ul.align-items-center{align-items: flex-start !important;}
     .logo img{height: 80px;}
     .sec-pad{padding: 50px 0;}
     .logo{z-index: 110;}
