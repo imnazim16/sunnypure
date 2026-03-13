@@ -21,6 +21,7 @@ body {
     font-weight: 400;
     margin: 0;
     padding: 0;
+    padding-top: 70px;
 }
 h1, h2{
     color: var(--primary-color);
@@ -54,11 +55,11 @@ h3{
 
 header{
     background: var(--primary-color);
-    height: 80px;
+    height: 70px;
     top:0;
     left:0;
     width:100%;
-    position: sticky;
+    position: fixed;
     z-index: 120;
 }
 header .wrapper{
@@ -150,7 +151,7 @@ nav ul li a.active{
     background-color: var(--grey-background);
 }
 .testimonials-section{
-    background-color: var(--primary-color);
+    background-color: #4c6252;
     color: var(--white-color)
 }
 .testimonials-section h2{
@@ -166,8 +167,8 @@ nav ul li a.active{
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     color: var(--white-color);
-    float: none !important;
-    height: 100%;
+    float: inherit !important;
+    min-height: 100%;
 }
 .testimonials-section .slick-dots{
     list-style: none;
@@ -190,4 +191,18 @@ footer{
     background: var(--primary-color);
     color: var(--white-color);
     padding: 20px 0;
+}
+
+.menu-btn{position: absolute; top: 50%; margin-top: -20px; right: 15px; width: 40px; height: 40px; 
+    text-indent: -9999px; overflow: hidden; background: url('../img/menu.png') no-repeat var(--secondary-color); border: 0; cursor: pointer; display: none;}
+.menu-btn.active-menu{ background: url('../img/close.png') no-repeat var(--secondary-color); }
+
+@media (max-width:768px){
+    .menu-btn{display: block;}
+    nav{position: absolute; top: 70px; left: 0; width: 100%; background: var(--primary-color); display: none;}
+    nav.active-nav{display: block;}
+    nav ul{display: flex; flex-direction: column; align-items: center; gap: 15px; padding: 20px 0;}
+    .logo img{height: 80px;}
+    .sec-pad{padding: 50px 0;}
+    .logo{z-index: 110;}
 }
