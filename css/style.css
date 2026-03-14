@@ -70,6 +70,7 @@ header .wrapper{
     top: 0;
     left: 20px;
     background: var(--primary-color);
+    border-radius: 0 0 7px 7px;
 }
 .logo img {
     height: 95px;
@@ -190,6 +191,20 @@ nav ul li a.active{
 .contact-section{
     background-color: var(--grey-background);
 }
+.contact-section .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+.contact-section .social-icons a:hover {
+    background-color: var(--hover-color);
+}
 footer{
     background: var(--primary-color);
     color: var(--white-color);
@@ -201,12 +216,19 @@ footer{
 .menu-btn.active-menu{ background: url('../img/close.png') no-repeat var(--secondary-color); }
 
 .accordion-header .accordion-button{
-    background: var(--primary-color);
+    background: var(--secondary-color);
     color: var(--white-color);
     cursor: pointer;
     border: none;
     outline: none;
     transition: background-color 0.3s ease;
+    font-size: var(--font-size);
+}
+.accordion-body{
+    font-size: var(--font-size);
+}
+.accordion-button.collapsed{
+    background: var(--primary-color);
 }
 
 @media (max-width:768px){
@@ -238,4 +260,21 @@ footer{
 
 form input{
     height: 45px;
+}
+.faq-section img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.links{
+    color: var(--white-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+}
+.links:hover{
+    color: var(--hover-color);
+}
+.accordion-button:focus{
+    box-shadow: none;
 }
